@@ -1,3 +1,7 @@
+<section>
+    HIGHLIGHTS
+</section>
+
 <section class="col-50 center-box center-txt">
     <h3>Kreditanfrage</h3>
     <div>

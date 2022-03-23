@@ -32,6 +32,8 @@ $detachmentAmount = $_POST['detachment_amount'];
                     <input type="text" name="surname" id="surname_txt" />
                 </div>
                 <div>
+                    <!-- >18 Jahre -->
+                    <!-- Schriftart anpassen -->
                     <label for="birthdate">Geburtsdatum</label>
                     <input type="date" name="birthdate" id="birthdate_date" />
                 </div>
