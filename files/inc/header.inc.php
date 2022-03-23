@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="files/fonts/fontawesome/css/all.css">
     <script src="files/js/jquery-3.6.0.js"></script>
     <script src="files/js/credit_request_functions.js" async></script>
-    <title>Emanuel Ziegler - Finanzcoach</title>
+    <title>EZ - Finanzcoach</title>
 </head>
 <body>
     

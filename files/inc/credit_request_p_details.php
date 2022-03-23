@@ -1,5 +1,6 @@
 <?php
 
+// STEP 1
 $desiredAmount = $_POST['desired_amount'];
 $runningTime = $_POST['running_time'];
 $monthlyRate = $_POST['monthly_rate'];
@@ -13,7 +14,7 @@ $detachmentAmount = $_POST['detachment_amount'];
     <div>
         <form action="index.php?page=credit_request_address" method="POST">
             <div class="col-100 center-box">
-                <h3>1. Kreditnehmer</h3>
+                <h4>1. Kreditnehmer</h4>
                 <div>
                     <label for="salutation">Anrede</label>
                     <input type="text" name="salutation" id="salutation_txt" />
@@ -59,25 +60,30 @@ $detachmentAmount = $_POST['detachment_amount'];
                 <div class="mar-20 d-block clearfix" id="borrower_option">
                     <div>
                         <h4>Icons für das Hinzufügen/Löschen des 2. Kreditnehmers</h4>
-                        <span>Icons werden noch angepasst und eingebunden</span>
-                        <i class="fa-solid fa-trash-can"></i>
-
-                        <i class="fa-solid fa-square-plus"></i>
+                        <span class="d-block">Icons werden noch angepasst und eingebunden</span>
+                        <i class="fa-solid fa-square-plus" id="plus-sign"></i>
+                        <i class="fa-solid fa-trash-can" id="trash-can"></i>
                     </div>
 
+                    <hr/>
 
-                    <div class="fl-l" id="add_borrower_btn_div">
-                        <input type="button" name="add_borrower" id="add_borrower_btn" value="&#10002;" />
+                    <div class="clearfix">
+                        <h4>2. Kreditnehmer</h4>
+                        <div class="col-50 fl-l" id="add_borrower_btn_div">
+                            <input type="button" name="add_borrower" id="add_borrower_btn" value="&#10002;" />
+                        </div>
+
+                        <div class="col-50 fl-l" id="remove_borrower_btn_div">
+                            <input type="disabled" name="remove_borrower" id="remove_borrower_btn" value="-" />
+                        </div>
                     </div>
 
-                    <div class="fl-l" id="remove_borrower_btn_div">
-                        <input type="disabled" name="remove_borrower" id="remove_borrower_btn" value="-" />
-                    </div>
+                    <div id="add_borrower_sec_option"></div>
 
-                    <div id="add_borrower_sec_div"></div>
                 </div>
 
                 <div>
+                    <h4>Allgemeine Angaben zum Haushalt</h4>
                     <label for="children">Kindergeldberechtigte Kinder im Haushalt</label>
                     <select name="children" id="children_select">
                         <option value="0" selected>0</option>
@@ -111,11 +117,13 @@ $detachmentAmount = $_POST['detachment_amount'];
                     </select>
                 </div>
 
-                <div>
+                <div class="mar-20">
                     <input type="submit" name="submit" id="p_deatils_submit" />
                     <input type="reset" name="reset" id="p_details_reset" />
                 </div>
             </div>
+
+            <hr/>
 
             <div>
                 <h3>Übergabe Daten Schritt 1</h3>

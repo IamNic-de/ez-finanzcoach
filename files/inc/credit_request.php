@@ -2,6 +2,9 @@
     <h3>Kreditanfrage</h3>
     <div>
         <form action="index.php?page=credit_request_p_details" method="POST">
+            <div>
+                <h4>Wunschkredit</h4>
+            </div>
             <div class="mar-20">
                 <label for="desired_amount">Wunschbetrag</label>
                 <input type="range" name="desired_amount" id="desired_amount_range" 
@@ -29,6 +32,7 @@
                 <input type="radio" name="detachment_radio" id="detachment_no_radio" value="n" class="d-i-block" checked />
 
                 <div id="detachment_option"></div>
+                
             </div>
             <div class="mar-20">
                 <input type="submit" name="submit" id="cr_req_submit" />
