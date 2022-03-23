@@ -29,6 +29,52 @@ body{
 .center-txt{text-align: center;}
 
 /* ########################################
+ICONS
+######################################## */ 
+
+#trash-can{
+    background: var(--darkAnthrazit);
+    border-radius: 16px;
+    color: var(--gold);
+    height: 64px;
+    width: 64px;
+    line-height: 64px;
+    font-size: 2.5rem;
+    transition:all 0.2s;
+}
+
+#trash-can.icon-disabled{
+    background: silver;
+    color: var(--darkAnthrazit);
+    cursor: none;
+}
+
+#trash-can:hover{
+    background: var(--snow);
+    color: tomato;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#plus-sign{
+    background: var(--darkAnthrazit);
+    border-radius: 16px;
+    color: var(--gold);
+    height: 64px;
+    width: 64px;
+    line-height: 64px;
+    font-size: 2.5rem;
+    transition: all 0.2s;
+}
+
+#plus-sign:hover{
+    background: var(--snow);
+    color: yellowgreen;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* ########################################
 FONTS
 ######################################## */ 
 
